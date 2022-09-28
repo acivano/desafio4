@@ -5,6 +5,7 @@ const Containter = require('../container/container')
 
 const ProductContainer = new Containter()
 
+
 routerApi.get('/productos', (req,res) => {
     res.json(ProductContainer.getAll())
 })
